@@ -18,7 +18,7 @@ fun HamburguesaDto.toHamburguesa() = Hamburguesa(
 )
 
 fun List<Hamburguesa>.toDto() = HamburguesasListDto(
-    hamburguesas = map { it.toDto() }
+    list_Hamburguesas = map { it.toDto() }
 )
 
-fun HamburguesasListDto.toHamburguesasList() = hamburguesas.map { it.toHamburguesa() }
+fun HamburguesasListDto.toHamburguesasList() = list_Hamburguesas.map { it.toHamburguesa() }

@@ -17,7 +17,7 @@ fun Ingrediente.toIngredienteDto() = IngredienteDto(  // Importante que sea Ingr
 )
 
 fun List<Ingrediente>.toDto() = IngredienteListDto(
-    ingredientes = map { it.toIngredienteDto() }
+    list_Ingredientes = map { it.toIngredienteDto() }
 )
 
-fun IngredienteListDto.toProductosList() = ingredientes.map { it.toIngrediente() }
+fun IngredienteListDto.toProductosList() = list_Ingredientes.map { it.toIngrediente() }

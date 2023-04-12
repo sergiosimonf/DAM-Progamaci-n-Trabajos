@@ -14,7 +14,7 @@ private val logger = KotlinLogging.logger {}
 object hamburguesasFicheroXmlService : HamburguesasStorageService {
 
     private val localFile =
-        "${ConfigApp.APP_DATA}${File.separator}" + "hamburgesa" + File.separator + "xml" + File.separator + "hamburgesa.xml"
+        "${ConfigApp.APP_DATA}${File.separator}" + "hamburguesa" + File.separator + "xml" + File.separator + "hamburguesa.xml"
 
     private val serializer = Persister()
 

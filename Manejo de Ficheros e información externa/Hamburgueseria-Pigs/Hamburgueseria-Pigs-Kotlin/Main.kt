@@ -27,8 +27,8 @@ private val logger = KotlinLogging.logger {}
 
 @OptIn(ExperimentalStdlibApi::class)
 fun main() {
-    consultas()
     menuPrincipal()
+    consultas()
 }
 
 fun menuPrincipal() {

@@ -13,7 +13,7 @@ private val logger = KotlinLogging.logger {}
 object hamburguesasFicheroCsvService : HamburguesasStorageService {
 
     private val localFile =
-        "${ConfigApp.APP_DATA}${File.separator}" + "hamburgesa" + File.separator + "csv" + File.separator + "hamburgesa.csv"
+        "${ConfigApp.APP_DATA}${File.separator}" + "hamburguesa" + File.separator + "csv" + File.separator + "hamburguesa.csv"
 
     override fun saveAll(items: List<Hamburguesa>) {
         logger.info { "Guardando hamburguesas en un fichero csv" }

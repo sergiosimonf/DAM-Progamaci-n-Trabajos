@@ -16,7 +16,7 @@ private val logger = KotlinLogging.logger {}
 @ExperimentalStdlibApi
 object hamburguesasFicheroJson : HamburguesasStorageService {
     private val localFile =
-        "${ConfigApp.APP_DATA}${File.separator}" + "hamburgesa" + File.separator + "json" + File.separator + "hamburguesa.json"
+        "${ConfigApp.APP_DATA}${File.separator}" + "hamburguesa" + File.separator + "json" + File.separator + "hamburguesa.json"
 
     private val moshi = Moshi.Builder()
         .add(UuidAdapter())
